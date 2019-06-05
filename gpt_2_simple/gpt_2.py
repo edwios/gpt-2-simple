@@ -232,7 +232,7 @@ def finetune(sess,
         maketree(os.path.join(SAMPLE_DIR, run_name))
         with open(
                 os.path.join(SAMPLE_DIR, run_name,
-                             'samples-{}').format(counter), 'w') as fp:
+                             'samples-{}').format(counter), encoding='utf-8', 'w') as fp:
             fp.write('\n'.join(all_text))
 
     def sample_batch():
